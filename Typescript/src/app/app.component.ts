@@ -27,5 +27,13 @@ export class AppComponent implements OnInit {
 
       let candidateArray:Candidate[]= [candidate,candidate2];
       console.log(candidateArray);
+
+      function print() {
+        return candidateArray;
+      }
+      let display = print();
+      for (let i in display) {
+        console.log(display[i]);
+      }
     }
 }
