@@ -1,3 +1,4 @@
+import { Employee } from './employee.model';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -35,5 +36,9 @@ export class AppComponent implements OnInit {
       for (let i in display) {
         console.log(display[i]);
       }
+
+      const employee=new Employee(1 ,"Ivan","ivanivanovic@gmail.com",915266470,"Designer");
+      const employee2=new Employee(2,"Milan","milanmilanic@gmail.com",33654188,"Web developer");
+      console.log(employee,employee2);
     }
 }
