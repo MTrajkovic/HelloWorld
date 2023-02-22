@@ -24,5 +24,8 @@ export class AppComponent implements OnInit {
       const candidate = new Candidate('Ivan','Ivanovic',new Date(1998 , 26,2))
       const candidate2 = new Candidate('Milan','Milanic',new Date(1977 , 15,7))
       console.log(candidate,candidate2);
+
+      let candidateArray:Candidate[]= [candidate,candidate2];
+      console.log(candidateArray);
     }
 }
