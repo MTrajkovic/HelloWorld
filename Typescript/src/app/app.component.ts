@@ -1,3 +1,4 @@
+import { BaseEntety } from './BaseEntity.model';
 import { Product } from './product.model';
 import { User } from './user.model';
 import { Address } from './adress.model';

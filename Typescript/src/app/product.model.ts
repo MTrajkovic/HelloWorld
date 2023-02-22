@@ -1,4 +1,5 @@
-export class Product {
+import { BaseEntety } from './BaseEntity.model';
+export class Product implements BaseEntety {
   readonly id:number;
   readonly title:string;
   readonly price:number;
