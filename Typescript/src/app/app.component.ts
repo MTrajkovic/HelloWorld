@@ -1,3 +1,4 @@
+import { Product } from './product.model';
 import { User } from './user.model';
 import { Address } from './adress.model';
 import { Customer } from './customer.model';
@@ -43,5 +44,14 @@ export class AppComponent implements OnInit {
       const employee=new Employee(1 ,"Ivan","ivanivanovic@gmail.com",915266470,"Designer");
       const employee2=new Employee(2,"Milan","milanmilanic@gmail.com",33654188,"Web developer");
       console.log(employee,employee2);
+
+      const product:Product=new Product(1,"Iphone",1250,"14pro");
+      const product1:Product=new Product(2,"Samsung",990,"s22");
+      const product2:Product=new Product(3,"Nokia",340,"100s");
+      const product3:Product=new Product(4,"Sony",555,"i54");
+      const product4:Product=new Product(5,"Huawei",789,"a89");
+      const products:Product[]=[product,product1,product2,product3,product4];
+      const displayProduct=product.getInformation(products);
+      console.log(displayProduct);
     }
 }
