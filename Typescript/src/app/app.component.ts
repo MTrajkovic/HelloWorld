@@ -39,6 +39,12 @@ export class AppComponent implements OnInit {
     const displayName=customer1.getName();
     console.log(displayName);
     console.log(customer1)
+
+    const user:User=new User(1,"Ivan","ivan@gmail.com",12312455);
+    const adressMilan:Address=new Address("Pozeska",198,"Novi sad","Serbia");
+    const customer3:Customer=new Customer(1,"Milan","milan@gmail.com",434243434,adressMilan);
+    const employeeAleksa:Employee=new Employee(3,"Aleksa","aleksa@gmail.com",4324223312,"FullStack");
+
   }
 
 
