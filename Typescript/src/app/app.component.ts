@@ -27,13 +27,19 @@ export class AppComponent implements OnInit {
       const candidates:Candidate[]=[candidate,candidate2]
       const displayM=this.printCandidates(candidates)
       console.log(displayM);
-    }
-    printCandidates (candidates:Candidate[]) {
+
+
+    const customer =new Customer(1,"Petar","petar@gmail.com",38144444,"Pere Perica 21");
+    const displayCustomer=customer.displayCustomer();
+    console.log(displayCustomer);
+  }
+     printCandidates(candidates:Candidate[]):string {
       let message:string="";
       for( let candidate of candidates) {
         message+=candidate.firstName + " "+ candidate.lastName + ":"+candidate.birthday;
       }
       return message;
+    }
 
       const employee=new Employee(1 ,"Ivan","ivanivanovic@gmail.com",915266470,"Designer");
       const employee2=new Employee(2,"Milan","milanmilanic@gmail.com",33654188,"Web developer");
@@ -47,5 +53,6 @@ export class AppComponent implements OnInit {
       const products:Product[]=[product,product1,product2,product3,product4];
       const displayProduct=product.getInformation(products);
       console.log(displayProduct);
+
     }
-}
+
