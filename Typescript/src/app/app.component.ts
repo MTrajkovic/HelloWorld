@@ -67,7 +67,11 @@ export class AppComponent implements OnInit {
       const product4:Product=new Product(5,"Huawei",789,"a89");
       const products:Product[]=[product,product1,product2,product3,product4];
       const displayProduct=product.getInformation(products);
-      console.log(displayProduct);
+      console.log(this.product);
+      console.log(this.product1);
+      console.log(this.product2);
+      console.log(this.product3);
+      console.log(this.product4);
 
     }
 
