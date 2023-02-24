@@ -24,13 +24,16 @@ export class AppComponent implements OnInit {
       let candidateArray:Candidate[]= [candidate,candidate2];
       console.log(candidateArray);
 
-      function print() {
-        return candidateArray;
+      const candidates:Candidate[]=[candidate,candidate2]
+      const displayM=this.printCandidates(candidates)
+      console.log(displayM);
+    }
+    printCandidates (candidates:Candidate[]) {
+      let message:string="";
+      for( let candidate of candidates) {
+        message+=candidate.firstName + " "+ candidate.lastName + ":"+candidate.birthday;
       }
-      let display = print();
-      for (let i in display) {
-        console.log(display[i]);
-      }
+      return message;
 
       const employee=new Employee(1 ,"Ivan","ivanivanovic@gmail.com",915266470,"Designer");
       const employee2=new Employee(2,"Milan","milanmilanic@gmail.com",33654188,"Web developer");
