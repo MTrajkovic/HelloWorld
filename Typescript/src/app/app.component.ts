@@ -29,10 +29,19 @@ export class AppComponent implements OnInit {
       console.log(displayM);
 
 
-    const customer =new Customer(1,"Petar","petar@gmail.com",38144444,"Pere Perica 21");
+    const adress:Address=new Address("Cvijiceva",13,"Belgrade","Serbia")
+    const customer = new Customer(1,"Ivan","ivan@gmail.com",245645423,adress);
     const displayCustomer=customer.displayCustomer();
     console.log(displayCustomer);
+
+    const adress2:Address=new Address("Brankova",14,"Belgrade","Serbia")
+    const customer1 = new Customer(2,"Milan","milan@gmail.com",142423566,adress2);
+    const displayName=customer1.getName();
+    console.log(displayName);
+    console.log(customer1)
   }
+
+
      printCandidates(candidates:Candidate[]):string {
       let message:string="";
       for( let candidate of candidates) {
