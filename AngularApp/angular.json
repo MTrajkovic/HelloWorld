@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "AngularApp": {
+    "GoldenBook": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-app",
+            "outputPath": "dist/golden-book",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -28,7 +28,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+              "node_modules/font-awesome/css/font-awesome.min.css"
             ],
             "scripts": []
           },
@@ -69,10 +70,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "AngularApp:build:production"
+              "browserTarget": "GoldenBook:build:production"
             },
             "development": {
-              "browserTarget": "AngularApp:build:development"
+              "browserTarget": "GoldenBook:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -80,7 +81,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "AngularApp:build"
+            "browserTarget": "GoldenBook:build"
           }
         },
         "test": {
@@ -103,5 +104,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "7ec8b1b5-2972-421d-a832-9c08225ab035"
   }
 }
