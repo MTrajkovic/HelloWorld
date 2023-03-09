@@ -1,4 +1,4 @@
-import { BooksComponent } from './components/books/books.component';
+import { BooksComponent } from '././components/books/books.component';
 import { BookComponent } from './components/book/book.component';
 
 import { NgModule } from '@angular/core';
