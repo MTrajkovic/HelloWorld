@@ -1,3 +1,9 @@
-<app-header></app-header>
-<app-central-part></app-central-part>
+<!--Header-->
+<app-header (visibleValue)="isHamburgerClicked($event)"></app-header>
+<!---Central part of the site-->
+<div class="wrapper">
+  <app-sidebar *ngIf="isSidebarVisible"></app-sidebar>
+  <router-outlet></router-outlet>
+</div>
+<!--footer-->
 <app-footer></app-footer>

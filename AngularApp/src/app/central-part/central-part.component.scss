@@ -1,12 +1,9 @@
 @import "../styles/variables";
 
 
-.top {
-  width:100%;
-}
-
- h1 {
-  color:$text-color;
+.wrapper {
+  width: 80%;
+  margin:25px auto 0 auto;
 }
 
 .inputs {

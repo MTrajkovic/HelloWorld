@@ -1,14 +1,18 @@
 @import "../../styles/variables";
-
+:host ::ng-deep {
 .mat-paginator {
   background: transparent;
   color: $text-color;
-}
-::ng-deep {.mat-form-field-wrapper {
-  .mat-select-value-text {
-    color: black;
+  .mat-select-value {
+    color: $text-color;
   }
-}}
+  .mat-select-arrow {
+    color:$text-color
+  }
+
+}
+}
+
 
 
 

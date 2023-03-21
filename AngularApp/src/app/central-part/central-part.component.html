@@ -1,13 +1,14 @@
 <div class="wrapper">
   <!--search-bars and input field-->
   <div class="top">
-    <h1>Homepage</h1>
+    <app-headline></app-headline>
     <div class="inputs">
       <app-search (displaySearch)="showValue($event)"></app-search>
-      <app-filter></app-filter>
+      <app-filter (displayValue)="showOption($event)"></app-filter>
     </div>
+    <p class="display-message">{{ displaySearch }}</p>
+    <p class="display-message">{{ displayValue }}</p>
   </div>
-  <p class="display-message">{{ displaySearch }}</p>
   <!---body of the books part of the site-->
   <app-books></app-books>
   <!--rows part-->

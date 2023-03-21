@@ -6,10 +6,25 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CentralPartComponent } from './central-part/central-part.component';
+import { HeadlineComponent } from './core/components/headline/headline.component';
+import { AppRoutingModule } from './app-routing.module';
+import { SinglebookComponent } from './books/components/singlebook/singlebook.component';
 
 @NgModule({
-  declarations: [AppComponent, CentralPartComponent],
-  imports: [BrowserModule, CoreModule, SharedModule, BooksModule, BrowserAnimationsModule],
+  declarations: [
+    AppComponent,
+    CentralPartComponent,
+    HeadlineComponent,
+    SinglebookComponent,
+  ],
+  imports: [
+    BrowserModule,
+    CoreModule,
+    SharedModule,
+    BooksModule,
+    BrowserAnimationsModule,
+    AppRoutingModule,
+  ],
   providers: [],
   bootstrap: [AppComponent],
 })
