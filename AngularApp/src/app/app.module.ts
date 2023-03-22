@@ -8,7 +8,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { CentralPartComponent } from './central-part/central-part.component';
 import { HeadlineComponent } from './core/components/headline/headline.component';
 import { AppRoutingModule } from './app-routing.module';
-import { SinglebookComponent } from './books/components/singlebook/singlebook.component';
+import { SinglebookComponent } from './books/components/singlebook/single-book.component';
 
 @NgModule({
   declarations: [

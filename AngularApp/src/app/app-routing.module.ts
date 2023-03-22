@@ -1,4 +1,4 @@
-import { SinglebookComponent } from './books/components/singlebook/singlebook.component';
+import { SinglebookComponent } from './books/components/singlebook/single-book.component';
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { CentralPartComponent } from './central-part/central-part.component';
