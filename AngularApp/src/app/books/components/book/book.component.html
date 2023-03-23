@@ -1,8 +1,8 @@
-<div class="box">
+<div class="box" *ngFor="let book of books">
   <h3>{{ book.title }}</h3>
   <div class="box-inside">
     <div class="box-content">
-      <img [src]="book.src" />
+      <img [alt]="book.alt" [src]="book.src" />
     </div>
     <div class="box-info">
       <div class="box-description">
@@ -13,7 +13,7 @@
         </div>
       </div>
       <div class="book-button">
-        <a class="book-overview" [routerLink]="book.overview">BOOK OVERVIEW</a>
+        <a class="book-overview" [routerLink]="book.id">BOOK OVERVIEW</a>
       </div>
     </div>
   </div>

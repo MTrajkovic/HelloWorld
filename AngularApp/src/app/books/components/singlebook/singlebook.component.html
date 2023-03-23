@@ -1,0 +1,35 @@
+<ng-container *ngFor="let book of books">
+  <div class="single-book-container" [ngSwitch]="book.id">
+    <div class="single-book-box" *ngSwitchCase="bookId">
+      <h1 class="single-book-title">Book Overview-{{ book.title }}</h1>
+      <div class="single-book">
+        <h2>{{ book.title }}</h2>
+        <div class="single-book-content">
+          <div class="single-book-img">
+            <img [alt]="book.alt" [src]="book.src" />
+          </div>
+          <div class="single-book-text">
+            <p class="single-book-id">BookID:{{ bookId }}</p>
+            <p class="bold-text">{{ book.surname }}</p>
+            <p>Contry:USA</p>
+            <p>{{ book.category }}</p>
+            <p>ISBN:1234567890</p>
+            <p class="single-book-paragraf">
+              {{ book.description }}
+            </p>
+            <p class="bold-text">
+              Nina Bandzin<span class="normal-text">USA</span>
+            </p>
+            <p class="single-book-paragraf">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</ng-container>
+
+<div class="single-book-button">
+  <a routerLink="/" class="book-overview single-book-btn">close</a>
+</div>

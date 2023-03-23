@@ -1,17 +1,20 @@
-import { Book } from '../../../model/interfaces/book.model';
 import { Component, Input, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
 import { Categories } from 'src/app/model/enum/categories.enum';
+import { Book } from 'src/app/model/interfaces/book.model';
 
 @Component({
-  selector: 'app-book',
-  templateUrl: './book.component.html',
-  styleUrls: ['./book.component.scss'],
+  selector: 'app-singlebook',
+  templateUrl: './singlebook.component.html',
+  styleUrls: ['./singlebook.component.scss'],
 })
-export class BookComponent implements OnInit {
-  constructor() {}
+export class SinglebookComponent implements OnInit {
+  bookId: string | null = '';
+
+  constructor(private activatedRouter: ActivatedRoute) {}
   books: Book[] = [
     {
-      id: 'book/1',
+      id: '1',
       title: 'Money power',
       src: 'assets/img/money.jpg',
       surname: 'Name Surname:1998',
@@ -21,7 +24,7 @@ export class BookComponent implements OnInit {
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
     },
     {
-      id: 'book/2',
+      id: '2',
       title: 'My First Love',
       src: 'assets/img/my-first-love.jpg',
       surname: 'Name Surname:2000',
@@ -31,7 +34,7 @@ export class BookComponent implements OnInit {
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
     },
     {
-      id: 'book/3',
+      id: '3',
       title: 'My Little Life',
       src: 'assets/img/my-little-life.jpg',
       category: 'Category:' + Categories.general,
@@ -41,7 +44,7 @@ export class BookComponent implements OnInit {
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
     },
     {
-      id: 'book/4',
+      id: '4',
       title: 'The Lost Trip',
       src: 'assets/img/the-lost-trip.jpg',
       surname: 'Name Surname:2008',
@@ -51,7 +54,7 @@ export class BookComponent implements OnInit {
       category: 'Category:' + Categories.history,
     },
     {
-      id: 'book/5',
+      id: '5',
       title: 'Dark',
       src: 'assets/img/dark.jpg',
       surname: 'Name Surname:2010',
@@ -61,7 +64,7 @@ export class BookComponent implements OnInit {
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
     },
     {
-      id: 'book/6',
+      id: '6',
       title: 'Find Me',
       src: 'assets/img/find-me.jpg',
       surname: 'Name Surname:2021',
@@ -71,6 +74,9 @@ export class BookComponent implements OnInit {
         'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
     },
   ];
-
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    let bookId = this.activatedRouter.snapshot.paramMap.get('id');
+    console.log(bookId);
+    this.bookId = bookId;
+  }
 }
