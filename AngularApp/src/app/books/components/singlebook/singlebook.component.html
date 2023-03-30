@@ -1,14 +1,18 @@
-<ng-container *ngFor="let book of books">
-  <div class="single-book-container" [ngSwitch]="book.id">
-    <div class="single-book-box" *ngSwitchCase="bookId">
+<ng-container *ngIf="book; else bookNotFound">
+  <div class="single-book-container">
+    <div class="single-book-box">
       <h1 class="single-book-title">Book Overview-{{ book.title }}</h1>
-      <div class="single-book">
+      <div class="single-book" appBookBackground [category]="book.category">
         <h2>{{ book.title }}</h2>
         <div class="single-book-content">
           <div class="single-book-img">
             <img [alt]="book.alt" [src]="book.src" />
           </div>
-          <div class="single-book-text">
+          <div
+            class="single-book-text"
+            appBookBackground
+            [category]="book.category"
+          >
             <p class="single-book-id">BookID:{{ bookId }}</p>
             <p class="bold-text">{{ book.surname }}</p>
             <p>Contry:USA</p>
@@ -21,7 +25,10 @@
               Nina Bandzin<span class="normal-text">USA</span>
             </p>
             <p class="single-book-paragraf">
-              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              "Fantastic book!I absolutly love this essey collection.Guess I'm
+              into colections right now.i had to read it with tissue in my hand
+              because in manz parts i would tear up from trying to hold my
+              laughter"
             </p>
           </div>
         </div>
@@ -33,3 +40,6 @@
 <div class="single-book-button">
   <a routerLink="/" class="book-overview single-book-btn">close</a>
 </div>
+<ng-template #bookNotFound>
+  <app-headline text="Book not found"></app-headline>
+</ng-template>

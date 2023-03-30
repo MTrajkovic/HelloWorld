@@ -1,12 +1,8 @@
 @import "../../../styles/variables";
 :host {
-  width: 100%;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
+  width: 33%;
 }
 .box {
-  width: 33%;
   margin-bottom: 10px;
   border: 0.5px solid black;
   border-radius: 5px;
@@ -32,6 +28,7 @@
     font-weight: 400 !important ;
     margin-bottom: 25px;
     max-height: 20vh;
+    overflow-y: auto;
     p {
       font-style: italic;
       word-wrap:break-word;
@@ -51,7 +48,7 @@
     border-radius: 5px;
     text-decoration: none;
     text-align: center;
-    background-color: rgb(36, 33, 33);
+    background-color: rgb(54, 51, 51);
     color:$text-color;
     display: inline-block;
   }

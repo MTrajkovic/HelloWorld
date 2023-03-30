@@ -15,9 +15,9 @@
         </li>
         <li></li>
         <li>
-          <div class="sidebar-btn" (click)="onToggle()">
+          <div class="sidebar-btn" (click)="onToggle()" >
             <mat-icon class="sidebar-icons">reorder</mat-icon>
-            <p class="sidebar-btn-text">Categories</p>
+            <p class="sidebar-btn-text" routerLinkActive="active">Categories</p>
             <mat-icon class="sidebar-icons">arrow_right</mat-icon>
           </div>
         </li>
@@ -25,17 +25,19 @@
           <div class="sidebar-btn">
             <ul *ngIf="category">
               <li
-                class="categories-sidebar"
+                class="categories-sidebar"routerLinkActive="active"
                 *ngFor="let category of categoriesList"
-                [value]="category"
               >
-                <a>{{ category }}</a>
+                <a [routerLink]="['/category', category.id]">{{
+                  category.name
+                }}</a>
               </li>
             </ul>
           </div>
         </li>
         <li>
-          <div class="sidebar-btn" (click)="onClick()">
+          <div class="sidebar-btn" (click)="onClick()"
+          routerLinkActive="active">
             <mat-icon class="sidebar-icons">verified_user</mat-icon>
             <p routerLink="admin" class="sidebar-btn-text">Admin</p>
             <mat-icon class="sidebar-icons" [ngClass]="{ rotate: adminValue }"
@@ -44,10 +46,12 @@
           </div>
         </li>
         <li>
-          <div class="sidebar-btn">
+          <div class="sidebar-btn" >
             <ul *ngIf="adminValue">
               <li class="categories-sidebar" *ngFor="let admin of adminList">
-                <a routerLink="/admin/">{{ admin }} </a>
+                <a [routerLink]="['admin', admin.path]"
+                  >{{ admin.linkName }}
+                </a>
               </li>
             </ul>
           </div>

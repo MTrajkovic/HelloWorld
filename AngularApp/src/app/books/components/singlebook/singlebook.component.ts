@@ -14,69 +14,72 @@ export class SinglebookComponent implements OnInit {
   constructor(private activatedRouter: ActivatedRoute) {}
   books: Book[] = [
     {
-      id: '1',
+      id: 1,
       title: 'Money power',
       src: 'assets/img/money.jpg',
       surname: 'Name Surname:1998',
       category: 'Category:' + Categories.general,
       alt: 'Money power',
       description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     },
     {
-      id: '2',
+      id: 2,
       title: 'My First Love',
       src: 'assets/img/my-first-love.jpg',
       surname: 'Name Surname:2000',
       category: 'Category:' + Categories.general,
       alt: 'My First Love',
       description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     },
     {
-      id: '3',
+      id: 3,
       title: 'My Little Life',
       src: 'assets/img/my-little-life.jpg',
       category: 'Category:' + Categories.general,
       alt: 'My Little Life',
       surname: ' Name Surname:2005',
       description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     },
     {
-      id: '4',
+      id: 4,
       title: 'The Lost Trip',
       src: 'assets/img/the-lost-trip.jpg',
       surname: 'Name Surname:2008',
       alt: 'The Lost Trip',
       description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
       category: 'Category:' + Categories.history,
     },
     {
-      id: '5',
+      id: 5,
       title: 'Dark',
       src: 'assets/img/dark.jpg',
       surname: 'Name Surname:2010',
       alt: 'Dark',
       category: 'Category:' + Categories.fantasy,
       description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     },
     {
-      id: '6',
+      id: 6,
       title: 'Find Me',
       src: 'assets/img/find-me.jpg',
       surname: 'Name Surname:2021',
       alt: 'Find Me',
       category: 'Category:' + Categories.fantasy,
       description:
-        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.',
+        'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.',
     },
   ];
+  book?: Book;
+
   ngOnInit(): void {
     let bookId = this.activatedRouter.snapshot.paramMap.get('id');
     console.log(bookId);
     this.bookId = bookId;
+    this.book = this.books.find((book) => book.id.toString() === this.bookId);
   }
 }

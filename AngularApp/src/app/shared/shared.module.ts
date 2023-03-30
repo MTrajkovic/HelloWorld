@@ -6,8 +6,16 @@ import { CommonModule } from '@angular/common';
 import { MatPaginatorModule } from '@angular/material/paginator';
 import { MatSelectModule } from '@angular/material/select';
 import { MatCheckboxModule } from '@angular/material/checkbox';
+import { NotFoundComponent } from './not-found/not-found.component';
+import { HeadlineComponent } from './headline/headline.component';
 @NgModule({
-  declarations: [SearchComponent, FilterComponent, PaginationComponent],
+  declarations: [
+    SearchComponent,
+    FilterComponent,
+    PaginationComponent,
+    NotFoundComponent,
+    HeadlineComponent,
+  ],
   imports: [
     CommonModule,
     MatPaginatorModule,
@@ -21,6 +29,7 @@ import { MatCheckboxModule } from '@angular/material/checkbox';
     MatPaginatorModule,
     MatSelectModule,
     MatCheckboxModule,
+    HeadlineComponent,
   ],
 })
 export class SharedModule {}
