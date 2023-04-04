@@ -1,18 +1,17 @@
 import { style } from '@angular/animations';
-import { Categories } from './../../../model/enum/categories.enum';
+import { Categories } from './../../../../model/enum/categories.enum';
 import { Directive, ElementRef, Input, OnInit } from '@angular/core';
 
 @Directive({
   selector: '[appBookBackground]',
 })
 export class BookBackgroundDirective {
-  @Input() category?: string;
+  @Input() category?: Categories;
 
   constructor(private elementRef: ElementRef) {}
 
   ngOnInit(): void {
-    const categotyName = this.category?.replace('Category:', '');
-    switch (categotyName) {
+    switch (this.category) {
       case Categories.general:
         this.elementRef.nativeElement.style.backgroundColor = '';
         this.elementRef.nativeElement.style.color = '';

@@ -1,63 +1,77 @@
 @import "../book/book.component";
-@import "../../../styles/variables";
+@import "../../../../styles/variables";
 
 :host {
-  margin:15px 25px;
+  margin: 15px 25px;
   min-height: 87vh;
   width: 900px;
 }
+
 .single-book-title {
   color: $text-color;
   margin-bottom: 30px;
 }
+
 .single-book {
   width: 100%;
   background-color: $text-color;
   padding: 20px;
   margin-bottom: 25px;
+
   .single-book-content {
     display: flex;
     flex-wrap: wrap;
+
     .single-book-img {
       width: 30%;
+
       img {
         width: 80%;
       }
     }
+
     .single-book-text {
       width: 70%;
       font-size: 15px;
+
       .bold-text {
         font-weight: 700;
       }
+
       .normal-text {
         font-weight: 300;
       }
+
       .single-book-paragraf {
         font-style: italic;
       }
     }
   }
 }
+
 .single-book-button {
   width: 100%;
   display: flex;
   align-items: flex-end;
   flex-wrap: wrap;
   flex-direction: column;
+
   .single-book-btn {
-  width: 30%;
-  padding: 10px;
-  font-size: 20px;
-  text-transform: uppercase;
+    width: 30%;
+    padding: 10px;
+    font-size: 20px;
+    text-transform: uppercase;
+  }
 }
-}
+
 @media only screen and (max-width: 768px) {
   :host {
     width: 90%;
+
     .single-book {
       width: 80%;
     }
+
     .single-book-button {
       width: 100%;
       align-items: flex-start;

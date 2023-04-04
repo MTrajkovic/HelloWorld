@@ -1,4 +1,4 @@
-import { BooksModule } from './books/books.module';
+import { BooksModule } from './features/books/books.module';
 import { SharedModule } from './shared/shared.module';
 import { CoreModule } from './core/core.module';
 import { NgModule } from '@angular/core';
@@ -13,7 +13,6 @@ import { AppRoutingModule } from './app-routing.module';
     BrowserModule,
     CoreModule,
     SharedModule,
-    BooksModule,
     BrowserAnimationsModule,
     AppRoutingModule,
   ],

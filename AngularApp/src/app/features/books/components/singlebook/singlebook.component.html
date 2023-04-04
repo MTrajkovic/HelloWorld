@@ -2,7 +2,7 @@
   <div class="single-book-container">
     <div class="single-book-box">
       <h1 class="single-book-title">Book Overview-{{ book.title }}</h1>
-      <div class="single-book" appBookBackground [category]="book.category">
+      <div class="single-book" appBookBackground [category]="book.category.name">
         <h2>{{ book.title }}</h2>
         <div class="single-book-content">
           <div class="single-book-img">
@@ -11,7 +11,7 @@
           <div
             class="single-book-text"
             appBookBackground
-            [category]="book.category"
+            [category]="book.category.name"
           >
             <p class="single-book-id">BookID:{{ bookId }}</p>
             <p class="bold-text">{{ book.surname }}</p>

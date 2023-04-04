@@ -9,6 +9,7 @@ export class CentralPartComponent implements OnInit {
   visibleHamburger: boolean = false;
   displaySearch: string = '';
   displayValue: string = '';
+  title: string = 'Homepage';
 
   constructor() {}
 
