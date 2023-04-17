@@ -6,6 +6,6 @@ export interface Book {
   alt: string;
   src: string;
   surname: string;
-  category: Category;
+  category: string;
   description: string;
 }

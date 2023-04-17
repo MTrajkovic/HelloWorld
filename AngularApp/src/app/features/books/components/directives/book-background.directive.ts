@@ -6,7 +6,7 @@ import { Directive, ElementRef, Input, OnInit } from '@angular/core';
   selector: '[appBookBackground]',
 })
 export class BookBackgroundDirective {
-  @Input() category?: Categories;
+  @Input() category?: string;
 
   constructor(private elementRef: ElementRef) {}
 
