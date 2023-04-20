@@ -7,6 +7,15 @@ import { Book } from 'src/app/model/interfaces/book.model';
   providedIn: 'root',
 })
 export class BookService {
+  softDelete(book: Book) {
+    throw new Error('Method not implemented.');
+  }
+  getAllActiveBooks() {
+    throw new Error('Method not implemented.');
+  }
+  delete(book: Book) {
+    throw new Error('Method not implemented.');
+  }
   private books: Book[] = books;
   constructor() {}
 

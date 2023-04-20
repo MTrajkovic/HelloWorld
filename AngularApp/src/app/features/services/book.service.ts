@@ -29,4 +29,18 @@ export class ServicesService {
       `${environment.baseApiUrl}categories`
     );
   }
+
+  delete(book: Book): Observable<any> {
+    return this.httpClientService.delete(
+      `${environment.baseApiUrl}books/${book.id}`
+    );
+  }
+
+  softDelete(book: Book): Observable<Book> {
+    const today = new Date().toISOString();
+    return this.httpClientService.patch<Book>(
+      `${environment.baseApiUrl}books/${book.id}`,
+      { deletedAt: today }
+    );
+  }
 }
