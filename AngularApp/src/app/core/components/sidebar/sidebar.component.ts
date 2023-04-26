@@ -1,8 +1,11 @@
+import { SidebarService } from './../../services/sidebar.service';
 import { AdminLink } from './../../interfaces/admin-link.interface';
-import { Category } from '../../interfaces/category.interface';
 import { Admin } from './../../../model/enum/admin.enum';
 import { Component, OnInit } from '@angular/core';
 import { Categories } from 'src/app/model/enum/categories.enum';
+import { Subject, takeUntil } from 'rxjs';
+import { CategoryService } from 'src/app/books/services/category.service';
+import { Category } from '../../interfaces/category.interface';
 
 @Component({
   selector: 'app-sidebar',
@@ -10,27 +13,12 @@ import { Categories } from 'src/app/model/enum/categories.enum';
   styleUrls: ['./sidebar.component.scss'],
 })
 export class SidebarComponent implements OnInit {
-  adminValue: boolean = false;
-  category: boolean = false;
+  adminTab: boolean = false;
+  categoryTab: boolean = false;
+  categories: Category[] = [];
+  unsubscribe$: Subject<void> = new Subject();
+  isVisible: boolean = false;
   showFiller = false;
-  categoriesList: Category[] = [
-    {
-      id: 1,
-      name: Categories.general,
-    },
-    {
-      id: 2,
-      name: Categories.history,
-    },
-    {
-      id: 3,
-      name: Categories.fantasy,
-    },
-    {
-      id: 4,
-      name: Categories.literary,
-    },
-  ];
   adminList: AdminLink[] = [
     {
       linkName: Admin.books,
@@ -41,14 +29,30 @@ export class SidebarComponent implements OnInit {
       path: 'category',
     },
   ];
-  constructor() {}
+  constructor(private categoryService: CategoryService) {}
 
-  ngOnInit(): void {}
+  ngOnInit(): void {
+    this.getAllCategories();
+  }
+
+  unsubscribeAll(): void {
+    this.unsubscribe$.next();
+    this.unsubscribe$.complete();
+  }
+
+  getAllCategories() {
+    this.categoryService
+      .getAll()
+      .pipe(takeUntil(this.unsubscribe$))
+      .subscribe((categories) => {
+        this.categories = categories;
+      });
+  }
 
   onToggle() {
-    this.category = !this.category;
+    this.categoryTab = !this.categoryTab;
   }
   onClick() {
-    this.adminValue = !this.adminValue;
+    this.adminTab = !this.adminTab;
   }
 }

@@ -1,5 +1,3 @@
-import { Category } from "src/app/core/interfaces/category.interface";
-
 export interface Book {
   id: number;
   title: string;
@@ -8,4 +6,5 @@ export interface Book {
   surname: string;
   category: string;
   description: string;
+  deletedAt: string;
 }

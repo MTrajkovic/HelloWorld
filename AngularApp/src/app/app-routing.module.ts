@@ -6,7 +6,7 @@ const routes: Routes = [
   {
     path: '',
     loadChildren: () =>
-      import('../app/features/books/books.module').then((module) => module.BooksModule),
+      import('../app/books/books.module').then((module) => module.BooksModule),
   },
   {
     path: 'admin',
