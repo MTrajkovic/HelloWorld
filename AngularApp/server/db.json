@@ -7,28 +7,46 @@
       "surname": "Name Surname:1998",
       "category": "General",
       "alt": "Money power",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "deletedAt": null
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "deletedAt": null,
+      "authorName":"John Doe",
+      "year":1998,
+      "isbn":123456,
+      "rewiver": {
+        "review": "123"
+      }
     },
     {
       "id": 2,
       "title": "My First Love",
       "src": "assets/img/my-first-love.jpg",
       "surname": "Name Surname:2000",
-      "category": "Category:",
+      "category":  "General",
       "alt": "My First Love",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "deletedAt": null
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "deletedAt": null,
+      "authorName":"John Doe",
+      "year":2000,
+      "isbn":123456,
+      "rewiver": {
+        "review": "1234"
+      }
     },
     {
       "id": 3,
       "title": "My Little Life",
       "src": "assets/img/my-little-life.jpg",
-      "category": "Category:",
+      "category":  "General",
       "alt": "My Little Life",
       "surname": "Name Surname:2005",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "deletedAt": null
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "deletedAt": null,
+      "authorName":"John Doe",
+      "year":2005,
+      "isbn":123456,
+      "rewiver": {
+        "review": "1111"
+      }
     },
     {
       "id": 4,
@@ -36,9 +54,15 @@
       "src": "assets/img/the-lost-trip.jpg",
       "surname": "Name Surname:2008",
       "alt": "The Lost Trip",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "category": "Category:",
-      "deletedAt": null
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "category": "Fantasy",
+      "deletedAt": null,
+      "authorName":"John Doe",
+      "year":2008,
+      "isbn":123456,
+      "rewiver": {
+        "review": "1122"
+      }
     },
     {
       "id": 5,
@@ -46,9 +70,15 @@
       "src": "assets/img/dark.jpg",
       "surname": "Name Surname:2010",
       "alt": "Dark",
-      "category": "Category",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "deletedAt": null
+      "category": "History",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "deletedAt": null,
+      "authorName":"John Doe",
+      "year":2010,
+      "isbn":123456,
+      "rewiver": {
+        "review": "2222"
+      }
     },
     {
       "id": 6,
@@ -56,9 +86,15 @@
       "src": "assets/img/find-me.jpg",
       "surname": "Name Surname:2021",
       "alt": "Find Me",
-      "category": "Category:",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.",
-      "deletedAt": null
+      "category": "Literary",
+      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "deletedAt": null,
+      "authorName":"John Doe",
+      "year":2021,
+      "isbn":123456,
+      "rewiver": {
+        "review": "4444"
+      }
     }
   ],
   "categories": [
