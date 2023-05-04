@@ -18,16 +18,16 @@ export class BookBackgroundDirective {
         this.elementRef.nativeElement.style.color = '';
         break;
       case Categories.history:
-        this.elementRef.nativeElement.style.backgroundColor = '';
+        this.elementRef.nativeElement.style.backgroundColor = 'white';
         this.elementRef.nativeElement.style.color = '';
         break;
       case Categories.fantasy:
-        this.elementRef.nativeElement.style.backgroundColor = '';
-        this.elementRef.nativeElement.style.color = '';
+        this.elementRef.nativeElement.style.backgroundColor = 'pink';
+        this.elementRef.nativeElement.style.color = 'white';
         break;
       case Categories.literary:
-        this.elementRef.nativeElement.style.backgroundColor = '';
-        this.elementRef.nativeElement.style.color = '';
+        this.elementRef.nativeElement.style.backgroundColor = 'green';
+        this.elementRef.nativeElement.style.color = 'yellow';
         break;
     }
   }

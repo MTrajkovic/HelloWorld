@@ -3,8 +3,8 @@ import { MatDialogRef } from '@angular/material/dialog';
 
 @Component({
   selector: 'app-safe-filters',
-  templateUrl: './safe-filters.component.html',
-  styleUrls: ['./safe-filters.component.scss'],
+  templateUrl: './save-filters.component.html',
+  styleUrls: ['./save-filters.component.scss'],
 })
 export class SafeFiltersComponent {
   constructor(private dialogRef: MatDialogRef<SafeFiltersComponent>) {}

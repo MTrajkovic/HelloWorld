@@ -7,11 +7,11 @@
       "surname": "Name Surname:1998",
       "category": "General",
       "alt": "Money power",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Dictum pretium nulla nascetur diam malesuada curabitur lectus fames ornare posuere nec lacus.Parturient metus felis imperdiet! Curae; interdum consectetur nisl parturient aenean. Blandit diam class potenti eros.Vestibulum litora placerat ligula sapien eleifend orci rhoncus tincidunt convallis.",
       "deletedAt": null,
-      "authorName":"John Doe",
-      "year":1998,
-      "isbn":123456,
+      "authorName": "John Doe",
+      "year": 1998,
+      "isbn": 123456,
       "rewiver": {
         "review": "123"
       }
@@ -21,13 +21,13 @@
       "title": "My First Love",
       "src": "assets/img/my-first-love.jpg",
       "surname": "Name Surname:2000",
-      "category":  "General",
+      "category": "General",
       "alt": "My First Love",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Dictum pretium nulla nascetur diam malesuada curabitur lectus fames ornare posuere nec lacus.Parturient metus felis imperdiet! Curae; interdum consectetur nisl parturient aenean. Blandit diam class potenti eros.Vestibulum litora placerat ligula sapien eleifend orci rhoncus tincidunt convallis.",
       "deletedAt": null,
-      "authorName":"John Doe",
-      "year":2000,
-      "isbn":123456,
+      "authorName": "John Doe",
+      "year": 2000,
+      "isbn": 11111,
       "rewiver": {
         "review": "1234"
       }
@@ -36,14 +36,14 @@
       "id": 3,
       "title": "My Little Life",
       "src": "assets/img/my-little-life.jpg",
-      "category":  "General",
+      "category": "General",
       "alt": "My Little Life",
       "surname": "Name Surname:2005",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Dictum pretium nulla nascetur diam malesuada curabitur lectus fames ornare posuere nec lacus.Parturient metus felis imperdiet! Curae; interdum consectetur nisl parturient aenean. Blandit diam class potenti eros.Vestibulum litora placerat ligula sapien eleifend orci rhoncus tincidunt convallis.",
       "deletedAt": null,
-      "authorName":"John Doe",
-      "year":2005,
-      "isbn":123456,
+      "authorName": "John Doe",
+      "year": 2005,
+      "isbn": 22222,
       "rewiver": {
         "review": "1111"
       }
@@ -54,12 +54,12 @@
       "src": "assets/img/the-lost-trip.jpg",
       "surname": "Name Surname:2008",
       "alt": "The Lost Trip",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Dictum pretium nulla nascetur diam malesuada curabitur lectus fames ornare posuere nec lacus.Parturient metus felis imperdiet! Curae; interdum consectetur nisl parturient aenean. Blandit diam class potenti eros.Vestibulum litora placerat ligula sapien eleifend orci rhoncus tincidunt convallis.",
       "category": "Fantasy",
       "deletedAt": null,
-      "authorName":"John Doe",
-      "year":2008,
-      "isbn":123456,
+      "authorName": "John Doe",
+      "year": 2008,
+      "isbn": 33333,
       "rewiver": {
         "review": "1122"
       }
@@ -71,11 +71,11 @@
       "surname": "Name Surname:2010",
       "alt": "Dark",
       "category": "History",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Dictum pretium nulla nascetur diam malesuada curabitur lectus fames ornare posuere nec lacus.Parturient metus felis imperdiet! Curae; interdum consectetur nisl parturient aenean. Blandit diam class potenti eros.Vestibulum litora placerat ligula sapien eleifend orci rhoncus tincidunt convallis.",
       "deletedAt": null,
-      "authorName":"John Doe",
-      "year":2010,
-      "isbn":123456,
+      "authorName": "John Doe",
+      "year": 2010,
+      "isbn": 44444,
       "rewiver": {
         "review": "2222"
       }
@@ -87,11 +87,11 @@
       "surname": "Name Surname:2021",
       "alt": "Find Me",
       "category": "Literary",
-      "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
+      "description": "Dictum pretium nulla nascetur diam malesuada curabitur lectus fames ornare posuere nec lacus.Parturient metus felis imperdiet! Curae; interdum consectetur nisl parturient aenean. Blandit diam class potenti eros.Vestibulum litora placerat ligula sapien eleifend orci rhoncus tincidunt convallis.",
       "deletedAt": null,
-      "authorName":"John Doe",
-      "year":2021,
-      "isbn":123456,
+      "authorName": "John Doe",
+      "year": 2021,
+      "isbn": 55555,
       "rewiver": {
         "review": "4444"
       }
@@ -99,20 +99,146 @@
   ],
   "categories": [
     {
-      "id":1,
+      "id": 1,
       "name": "General"
     },
     {
-      "id":2,
+      "id": 2,
       "name": "Fantasy"
     },
     {
-      "id":3,
+      "id": 3,
       "name": "History"
     },
     {
-      "id":4,
+      "id": 4,
       "name": "Literary"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "firstName": "Pera",
+      "lastName": "Peric",
+      "email": "peraperic@gmail.com",
+      "password": "123456789",
+      "country": "Serbia",
+      "role": "user"
+    },
+    {
+      "id": 2,
+      "firstName": "Marko",
+      "lastName": "Markovic",
+      "email": "markomarkovic@gmail.com",
+      "password": "11112222",
+      "country": "Serbia",
+      "role": "admin"
+    },
+    {
+      "firstName": "Milos",
+      "lastName": "Trajkovic",
+      "email": "milostrajkovic12@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "country": 2,
+      "id": 3
+    },
+    {
+      "firstName": "Milos",
+      "lastName": "Trajkovic",
+      "email": "milostrajkovic12@gmail.com",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "country": 2,
+      "id": 4
+    },
+    {
+      "firstName": "Milos",
+      "lastName": "Trajkovic",
+      "email": "milostrajkovic12@gmail.com",
+      "password": "12345",
+      "confirmPassword": "12345",
+      "country": 2,
+      "id": 5
+    },
+    {
+      "firstName": "Milos",
+      "lastName": "Trajkovic",
+      "email": "milostrajkovic12@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "country": 2,
+      "id": 6
+    },
+    {
+      "firstName": "Milos",
+      "lastName": "Trajkovic",
+      "email": "milostrajkovic12@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "country": 1,
+      "id": 7
+    },
+    {
+      "firstName": "Milos",
+      "lastName": "Trajkovic",
+      "email": "milostrajkovic12@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "country": 2,
+      "id": 8
+    },
+    {
+      "firstName": "Milos",
+      "lastName": "Trajkovic",
+      "email": "milostrajkovic12@gmail.com",
+      "password": "1111",
+      "confirmPassword": "1111",
+      "id": 9
+    },
+    {
+      "firstName": "Milos",
+      "lastName": "Trajkovic",
+      "email": "milostrajkovic12@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "countryid": 2,
+      "id": 10
+    },
+    {
+      "firstName": "Milos",
+      "lastName": "Trajkovic",
+      "email": "milostrajkovic12@gmail.com",
+      "password": "123",
+      "confirmPassword": "123",
+      "countryid": 6,
+      "id": 11
+    }
+  ],
+  "countries": [
+    {
+      "id": 1,
+      "name": "Serbia"
+    },
+    {
+      "id": 2,
+      "name": "Bosnia"
+    },
+    {
+      "id": 3,
+      "name": "Macedonia"
+    },
+    {
+      "id": 4,
+      "name": "Montenegro"
+    },
+    {
+      "id": 5,
+      "name": "Croatia"
+    },
+    {
+      "id": 6,
+      "name": "Slovenia"
     }
   ]
 }

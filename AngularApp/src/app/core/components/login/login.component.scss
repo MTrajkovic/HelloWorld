@@ -1,0 +1,45 @@
+@import "../../../styles/variables.scss";
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items:flex-end;
+  margin: 15vh;
+
+  .login-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: transparent;
+    border: none;
+  }
+
+  h3 {
+    color: $text-color;
+  }
+  .input-field {
+    margin-top: 25px;
+    color: $text-color;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .login-input {
+    padding: 15px;
+    margin-top: 25px;
+    border-radius: 10px;
+  }
+  .login-button {
+    margin:  25px 50px;
+    letter-spacing:2px;
+    padding: 3px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    background-color: gray;
+    color:$text-color;
+    display: inline-block;
+}
+}
+
+
+

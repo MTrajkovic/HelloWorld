@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SafeFiltersComponent } from './safe-filters.component';
+import { InitialPageComponent } from './initial-page.component';
 
-describe('SafeFiltersComponent', () => {
-  let component: SafeFiltersComponent;
-  let fixture: ComponentFixture<SafeFiltersComponent>;
+describe('InitialPageComponent', () => {
+  let component: InitialPageComponent;
+  let fixture: ComponentFixture<InitialPageComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ SafeFiltersComponent ]
+      declarations: [ InitialPageComponent ]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(SafeFiltersComponent);
+    fixture = TestBed.createComponent(InitialPageComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
