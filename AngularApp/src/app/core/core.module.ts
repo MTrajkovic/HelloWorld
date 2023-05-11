@@ -17,8 +17,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatTooltipModule } from '@angular/material/tooltip';
 import { RegisterComponent } from './components/register/register.component';
 import { LoginComponent } from './components/login/login.component';
-import { ValidationPipe } from './pipe/validation.pipe';
-import { FullnamePipe } from './pipe/fullname.pipe';
+import { ValidationPipe } from '../shared/pipe/validation.pipe';
+import { FullnamePipe } from '../shared/pipe/fullname.pipe';
 
 @NgModule({
   declarations: [

@@ -15,7 +15,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { SafeFiltersComponent } from './components/safe-filters/safe-filters.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ExitSingleBookComponent } from './components/exit-single-book/exit-single-book/exit-single-book.component';
-import { FullnamePipe } from '../core/pipe/fullname.pipe';
+import { FullnamePipe } from '../shared/pipe/fullname.pipe';
 
 @NgModule({
   declarations: [
