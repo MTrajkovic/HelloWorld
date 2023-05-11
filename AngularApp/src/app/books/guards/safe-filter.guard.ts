@@ -7,7 +7,7 @@ import {
   UrlTree,
 } from '@angular/router';
 import { Observable, map } from 'rxjs';
-import { SafeFiltersComponent } from '../components/save-filters/save-filters.component';
+import { SafeFiltersComponent } from '../components/safe-filters/safe-filters.component';
 import { CentralPartComponent } from '../components/central-part/central-part.component';
 
 @Injectable({

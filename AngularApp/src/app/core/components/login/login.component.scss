@@ -1,6 +1,5 @@
 @import "../../../styles/variables.scss";
 .login {
-  display: flex;
   flex-direction: column;
   align-items:flex-end;
   margin: 15vh;
@@ -41,5 +40,23 @@
 }
 }
 
+.login-input-field {
+  color:white;
+  margin-top: 10px;
+  text-align: center;
+  text-decoration: none;
+  input {
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 10px;
+  }
+}
 
+.hover-login {
+  color:$text-color;
+  text-decoration: none;
+}
 
+.hover-login:hover {
+  cursor: pointer;
+}

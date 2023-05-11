@@ -3,7 +3,7 @@ import { environment } from 'src/environments/environment';
 import { Observable } from 'rxjs';
 import { HttpClient } from '@angular/common/http';
 import { Country } from 'src/app/model/interfaces/country.interface';
-import { User } from 'src/app/model/interfaces/user.interface';
+import { Register } from 'src/app/model/interfaces/login.interface';
 
 @Injectable({
   providedIn: 'root',
@@ -17,10 +17,16 @@ export class RegisterService {
     );
   }
 
-  registerUsers(data: any): Observable<User[]> {
-    return this.httpClientSevice.post<User[]>(
+  registerUsers(data: Register): Observable<void> {
+    return this.httpClientSevice.post<void>(
       `${environment.baseApiUrl}users`,
       data
     );
+  }
+
+  isAdmin(): boolean {
+    const userLogged = localStorage.getItem('user_logged');
+    const logedUser = JSON.parse(userLogged!);
+    return logedUser.role === 'admin';
   }
 }

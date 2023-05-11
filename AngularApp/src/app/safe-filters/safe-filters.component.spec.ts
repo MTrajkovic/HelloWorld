@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { SafeFiltersComponent } from './save-filters.component';
+import { SafeFiltersComponent } from './safe-filters.component';
 
 describe('SafeFiltersComponent', () => {
   let component: SafeFiltersComponent;

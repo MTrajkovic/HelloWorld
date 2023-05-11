@@ -12,9 +12,10 @@ import { CentralPartComponent } from './components/central-part/central-part.com
 import { BookBackgroundDirective } from './components/directives/book-background.directive';
 import { BookService } from './services/book.service';
 import { HttpClientModule } from '@angular/common/http';
-import { SafeFiltersComponent } from './components/save-filters/save-filters.component';
+import { SafeFiltersComponent } from './components/safe-filters/safe-filters.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ExitSingleBookComponent } from './components/exit-single-book/exit-single-book/exit-single-book.component';
+import { FullnamePipe } from '../core/pipe/fullname.pipe';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { ExitSingleBookComponent } from './components/exit-single-book/exit-sing
     SinglebookComponent,
     SafeFiltersComponent,
     ExitSingleBookComponent,
+    FullnamePipe,
   ],
   imports: [
     CommonModule,
